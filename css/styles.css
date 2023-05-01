@@ -150,6 +150,12 @@ body {
   height: 22px;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-mobile-btn {
+    display: none;
+  }
+}
+
 .mobile-menu-box {
   position: fixed;
   top: 0;
@@ -306,5 +312,111 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-link {
+    position: relative;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .menu-link.current::after {
+    background-color: var(--secondary-accent-color);
+  }
+  .menu-link.current {
+    color: var(--secondary-accent-color);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--secondary-accent-color);
+  }
+
+  .contact-info {
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .contact-details {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-details:hover,
+  .contact-details:focus {
+    color: var(--secondary-accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 76px;
+  }
+  .contact-info {
+    font-style: normal;
+    margin-left: auto;
+  }
+  .contact-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-details {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
 /* ===/Mobile MENU=== */
+
 /* ================== /Top line ====================== */
