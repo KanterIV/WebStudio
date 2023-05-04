@@ -106,6 +106,17 @@ img {
   overflow: hidden;
 }
 
+.heading {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 72px;
+}
+
 .text {
   font-size: 16px;
   line-height: 1.5;
@@ -881,3 +892,27 @@ body {
 }
 
 /* =================== /Studio features ================ */
+
+/* =================== Work examples =================== */
+
+@media screen and (max-width: 1199px) {
+  .examples {
+    display: none;
+  }
+}
+
+.examples {
+  padding-bottom: 120px;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.examples-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/* ================== /Work examples =================== */
