@@ -432,6 +432,12 @@ body {
   color: var(--primary-accent-color);
 }
 
+@media screen and (max-width: 320px) {
+  .mobile-contact-phone {
+    font-size: 26px;
+  }
+}
+
 .mobile-contact-mail {
   font-style: normal;
   font-weight: 500;
@@ -698,7 +704,7 @@ body {
   opacity: 1;
 
   width: 392px;
-  min-height: 576px;
+  height: 586px;
   padding: 72px 16px 24px 16px;
 
   background-color: var(--modal-window-color);
@@ -713,6 +719,13 @@ body {
 @media screen and (max-width: 391px) {
   .modal {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .modal {
+    max-height: 90vh;
+    overflow-y: scroll;
   }
 }
 
