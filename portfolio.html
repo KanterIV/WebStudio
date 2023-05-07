@@ -39,6 +39,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-mobile-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="contact-info">
           <ul class="contact-list list">
             <li class="contact-list-item">
@@ -82,13 +91,43 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-8.jpg"
-                    alt="Online banking"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_desc1x.jpg  1x,
+                        ./images/portfolio/img_desc@2x.jpg 2x,
+                        ./images/portfolio/img_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img_tab1x.jpg  1x,
+                        ./images/portfolio/img_tab@2x.jpg 2x,
+                        images/portfolio/img_tab@3x.jpg   3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img_mob1x.jpg  1x,
+                        ./images/portfolio/img_mob@2x.jpg 2x,
+                        ./images/portfolio/img_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img_mob1x.jpg"
+                      alt="Online banking"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -106,13 +145,43 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-7.jpg"
-                    alt="QR payment"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_desc1x.jpg  1x,
+                        ./images/portfolio/img-1_desc@2x.jpg 2x,
+                        images/portfolio/img-1_desc@3x.jpg   3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-1_tab1x.jpg  1x,
+                        ./images/portfolio/img-1_tab@2x.jpg 2x,
+                        ./images/portfolio/img-1_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_mob1x.jpg  1x,
+                        ./images/portfolio/img-1_mob@2x.jpg 2x,
+                        ./images/portfolio/img-1_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-1_mob1x.jpg"
+                      alt="QR payment"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -130,13 +199,43 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-6.jpg"
-                    alt="Laptop and phone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_desc1x.jpg  1x,
+                        ./images/portfolio/img-2_desc@2x.jpg 2x,
+                        ./images/portfolio/img-2_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-2_tab1x.jpg  1x,
+                        ./images/portfolio/img-2_tab@2x.jpg 2x,
+                        ./images/portfolio/img-2_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_mob1x.jpg  1x,
+                        ./images/portfolio/img-2_mob@2x.jpg 2x,
+                        ./images/portfolio/img-2_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-2_mob1x.jpg"
+                      alt="Laptop and phone"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -154,13 +253,43 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-5.jpg"
-                    alt="Car interior"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_desc1x.jpg  1x,
+                        ./images/portfolio/img-3_desc@2x.jpg 2x,
+                        ./images/portfolio/img-3_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-3_tab1x.jpg  1x,
+                        ./images/portfolio/img-3_tab@2x.jpg 2x,
+                        ./images/portfolio/img-3_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_mob1x.jpg  1x,
+                        ./images/portfolio/img-3_mob@2x.jpg 2x,
+                        ./images/portfolio/img-3_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-3_mob1x.jpg"
+                      alt="Car interior"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -178,13 +307,42 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-4.jpg"
-                    alt="Phone with screensavers"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_desc1x.jpg  1x,
+                        ./images/portfolio/img-4_desc@2x.jpg 2x,
+                        ./images/portfolio/img-4_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-4_tab1x.jpg  1x,
+                        ./images/portfolio/img-4_tab@2x.jpg 2x,
+                        ./images/portfolio/img-4_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_mob1x.jpg  1x,
+                        ./images/portfolio/img-4_mob@2x.jpg 2x,
+                        ./images/portfolio/img-4_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-4_mob1x.jpg"
+                      alt="Phone with screensavers"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -202,13 +360,42 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-3.jpg"
-                    alt="Lucky girl with a phone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_desc1x.jpg  1x,
+                        ./images/portfolio/img-5_desc@2x.jpg 2x,
+                        ./images/portfolio/img-5_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-5_tab1x.jpg  1x,
+                        ./images/portfolio/img-5_tab@2x.jpg 2x,
+                        ./images/portfolio/img-5_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_mob1x.jpg  1x,
+                        ./images/portfolio/img-5_mob@2x.jpg 2x,
+                        ./images/portfolio/img-5_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-5_mob1x.jpg"
+                      alt="Lucky girl with a phone"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -226,13 +413,42 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-2.jpg"
-                    alt="Options for social media posts"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_desc1x.jpg  1x,
+                        ./images/portfolio/img-6_desc@2x.jpg 2x,
+                        ./images/portfolio/img-6_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-6_tab1x.jpg  1x,
+                        ./images/portfolio/img-6_tab@2x.jpg 2x,
+                        ./images/portfolio/img-6_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_mob1x.jpg  1x,
+                        ./images/portfolio/img-6_mob@2x.jpg 2x,
+                        ./images/portfolio/img-6_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-6_mob1x.jpg"
+                      alt="Options for social media posts"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -250,13 +466,42 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Girl with a fruit basket"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_desc1x.jpg  1x,
+                        ./images/portfolio/img-7_desc@2x.jpg 2x,
+                        ./images/portfolio/img-7_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-7_tab1x.jpg  1x,
+                        ./images/portfolio/img-7_tab@2x.jpg 2x,
+                        ./images/portfolio/img-7_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_mob1x.jpg  1x,
+                        ./images/portfolio/img-7_mob@2x.jpg 2x,
+                        ./images/portfolio/img-7_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-7_mob1x.jpg"
+                      alt="Girl with a fruit basket"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -274,13 +519,42 @@
             <li class="projects-list-item">
               <a class="projects-link link" href="">
                 <div class="overlay-box">
-                  <img
-                    class="projects-img"
-                    src="./images/portfolio/img.jpg"
-                    alt="Coffee cup"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_desc1x.jpg  1x,
+                        ./images/portfolio/img-8_desc@2x.jpg 2x,
+                        ./images/portfolio/img-8_desc@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 786px)"
+                      srcset="
+                        ./images/portfolio/img-8_tab1x.jpg  1x,
+                        ./images/portfolio/img-8_tab@2x.jpg 2x,
+                        ./images/portfolio/img-8_tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_mob1x.jpg  1x,
+                        ./images/portfolio/img-8_mob@2x.jpg 2x,
+                        ./images/portfolio/img-8_mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/img-8_mob1x.jpg"
+                      alt="Coffee cup"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -390,5 +664,108 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-btn js-close-menu">
+        <svg class="mobile-menu-icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-closing-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current link" href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="mobile-contact-info">
+        <ul class="mobile-contact-list list">
+          <li class="mobile-contact-list-item">
+            <a
+              class="mobile-contact-details mobile-contact-phone link"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contact-list-item">
+            <a
+              class="mobile-contact-details mobile-contact-mail link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-socials-list list">
+        <li class="mobile-socials-item">
+          <a
+            href=""
+            class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram icon"
+          >
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href=""
+            class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter icon"
+          >
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href=""
+            class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href=""
+            class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin icon"
+          >
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
