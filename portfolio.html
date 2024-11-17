@@ -72,19 +72,25 @@
           <!-- Filters -->
           <ul class="filters list">
             <li class="filters-item">
-              <button class="filters-btn" type="button">All</button>
+              <button id="all" class="filters-btn" type="button">All</button>
             </li>
             <li class="filters-item">
-              <button class="filters-btn" type="button">Web Site</button>
+              <button id="website" class="filters-btn" type="button">
+                Web Site
+              </button>
             </li>
             <li class="filters-item">
-              <button class="filters-btn" type="button">App</button>
+              <button id="app" class="filters-btn" type="button">App</button>
             </li>
             <li class="filters-item">
-              <button class="filters-btn" type="button">Design</button>
+              <button id="design" class="filters-btn" type="button">
+                Design
+              </button>
             </li>
             <li class="filters-item">
-              <button class="filters-btn" type="button">Marketing</button>
+              <button id="marketing" class="filters-btn" type="button">
+                Marketing
+              </button>
             </li>
           </ul>
           <ul class="projects-list list">
@@ -151,7 +157,7 @@
                       srcset="
                         ./images/portfolio/img-1_desc1x.jpg  1x,
                         ./images/portfolio/img-1_desc@2x.jpg 2x,
-                        images/portfolio/img-1_desc@3x.jpg   3x
+                        ./images/portfolio/img-1_desc@3x.jpg 3x
                       "
                       type="image/jpg"
                     />
@@ -665,14 +671,14 @@
       </div>
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer type="module" src="./js/mobile-menu.js"></script>
+    <script defet type="module" src="./js/portfolioFiltration.js"></script>
 
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
